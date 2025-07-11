@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Detail-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h2>STUDENT FORM</h2>
+    
+    <form id="studentForm">
+        <label>Name:<br>
+            <input type="text" id="name" required>
+        </label><br>
+
+        <label>Age:<br>
+            <input type="number" id="age" required>
+        </label><br>
+
+        <label>Gender:<br>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </label><br>
+
+        <label>Course:<br>
+            <select id="course">
+                <option value="Full Stack ">FULL STACK</option>
+                <option value="Machine Learning">MACHINE LEARNING </option>
+                <option value="Artificial Intelligence">ARTIFICIAL INTELLIGENCE</option>
+                <option value="Electronics">ELECTRONICS</option>
+                <option value=" Core Java">CORE JAVA</option>
+                <option value="Frontend Development">FRONTEND DEVELOPMENT</option>
+            </select>
+        </label><br>
+
+        <label>E-mail:<br>
+            <input type="email" id="email" required>
+        </label><br>
+
+        <button type="submit" id="saveBtn">Save</button>
+    </form>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody id="container">
+            
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
